@@ -13,12 +13,15 @@ body {
   line-height: 1.7;
 }
 
+p,
+h2 {
+  margin: 0;
+}
+
 .main-container {
-  width: 1200px;
+  width: 900px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 150px;
-  padding-left: 150px;
 }
 
 .list {
@@ -28,30 +31,14 @@ body {
 }
 
 /* nav */
+.nav {
+  padding-top: 75px;
+  padding-bottom: 100px;
+}
+
 .nav-list {
   display: flex;
-}
-
-.nav-item {
-  margin-top: 75px;
-  margin-bottom: 100px;
-}
-
-.nav-item:first-child {
-  margin-right: 120px;
-  margin-left: 160px;
-}
-
-.nav-item:nth-child(2) {
-  margin-right: 100px;
-}
-
-.nav-item:nth-child(3) {
-  margin-right: 95px;
-}
-
-.nav-item:last-child {
-  margin-right: 160px;
+  justify-content: center;
 }
 
 .nav-item {
@@ -59,8 +46,11 @@ body {
 }
 
 .nav-link {
+  display: inline-block;
   text-decoration: none;
   color: #626262;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .nav-link:hover,
@@ -69,6 +59,9 @@ body {
 }
 
 /* article */
+.article {
+  padding-bottom: 70px;
+}
 .article-list {
   display: flex;
   flex-wrap: wrap;
@@ -80,51 +73,46 @@ body {
   color: #b4ad9e;
   font-weight: 300;
   line-height: 1.2;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .article-item {
   flex-basis: calc(50% - 30px);
   flex-grow: 0;
   margin-right: 60px;
-  margin-bottom: 130px;
+  margin-bottom: 125px;
 }
 .article-item:nth-child(2n) {
   margin-right: 0;
 }
 
 .article-item:nth-last-child(-n + 2) {
-  margin-bottom: 0em;
+  margin-bottom: 57px;
 }
 
 .article-title {
   font-size: 30px;
   font-weight: 400;
-  margin-bottom: 40px;
   line-height: 1.2;
+  margin-bottom: 41px;
 }
 
 /* button */
 .button {
   font-family: inherit;
-  display: inline-block;
+  display: block;
   color: inherit;
   text-decoration: none;
   font-size: 30px;
   line-height: 1.2;
   padding: 20px 30px;
   border: 2px solid #626262;
-  margin-top: 56px;
-  margin-bottom: 70px;
+  margin: 0 auto;
   cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
   color: #03a9f4;
-}
-
-.pos-button {
-  text-align: center;
 }
